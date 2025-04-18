@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat&Tour</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flight.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+</head>
+
+<body>
+
+    <!-- Header Part is start from here  -->
+<header>
+    <nav id="navbar">
+       <a href="index.html"><img class="logo" src="./images/weblogo.png" alt=""></a>
+        <div class="navlink">
+            <ul>
+               <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+               <li><i class="fa-solid fa-umbrella-beach"></i><a href="Trip.html">Trip</a></li>
+               <li><i class="fa-solid fa-utensils"></i><a href="">Restorant</a></li>
+               <li><i class="fa-solid fa-clipboard"></i><a href="">Menu</a></li>
+               <li><i class="fa-solid fa-plane-up"></i><a href="./Flight.html">Flight</a></li>
+               <li><i class="fa-solid fa-hotel"></i><a href="./hotel.html">Hotel</a></li>
+               <li><i class="fa-solid fa-car-rear"></i><a href="">Drive</a></li>
+            </ul>
+        </div>
+        <div class="login">
+          <span>  <i class="fa-solid fa-circle-user"></i> <a href="login.html">Login</a></span>
+        <div class="barbutton">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    </nav>
+    <div class="dropdownmenu">
+        <ul>
+           <li><a href="index.html">* Home</a></li>
+           <li><a href="">* Trip</a></li>
+           <li><a href="">* Restorant</a></li>
+           <li><a href="">* Menu</a></li>
+           <li><a href="./Flight.html">* Flight</a></li>
+           <li><a href="hotel.html">* Hotel</a></li>
+           <li><a href="">* Drive</a></li>
+           <li><a href="">* About Us</a></li>
+           <li><a href="">* Services</a></li>
+           <li><a href="login.html">* LOGIN</a></li>
+        </ul>
+     </div>
+</header>
+<script>
+    const button = document.querySelector('.barbutton')
+    const buttonicon = document.querySelector('.barbutton i')
+    const dropmenu = document.querySelector('.dropdownmenu')
+
+    button.onclick = function(){
+        dropmenu.classList.toggle('open')
+        const isOpen =dropmenu.classList.contains('open')
+        buttonicon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+   <!-- Header part is end here  -->
+<main>
+
+    <section id="firstflight">
+        <div>
+            <img src="./Flightimg/flightmain.png" alt="">
+        </div>
+    </section>
+  
+
+</main>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Eats & Tours</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugiat impedit non voluptatibus magnam placeat molestiae officia ad sequi aliquid nulla dolorem ratione porro deleniti rerum, beatae quod quam. Consectetur.</p>
+            <p>Email: <a href="mailto:avinashdm@outlook.com"></a></p>
+            <p>Phone: +91 - 0123456789</p>
+        </div>
+        <div class="footer-section">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Join Us</h2>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Enter your email id">
+                <button type="submit">Subscribe</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Eats & Tour © 2025 - All Rights Reserved</p>
+    </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+<script src="./flight.js"></script>
+</body>
+</html>

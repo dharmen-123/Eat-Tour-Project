@@ -1,0 +1,11 @@
+
+#firstflight{
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+   
+    div img{
+        width: 60%;
+        height: 70%;
+    }
+}

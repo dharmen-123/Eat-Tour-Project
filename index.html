@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat&Tour</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+<body>
+
+    <!-- Header Part is start from here  -->
+<header>
+    <nav id="navbar">
+       <a href="index.html"><img class="logo" src="./images/weblogo.png" alt=""></a>
+        <div class="navlink">
+            <ul>
+               <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+               <li><i class="fa-solid fa-umbrella-beach"></i><a href="./Trip.html">Trip</a></li>
+               <li><i class="fa-solid fa-utensils"></i><a href="">Restorant</a></li>
+               <li><i class="fa-solid fa-clipboard"></i><a href="">Menu</a></li>
+               <li><i class="fa-solid fa-plane-up"></i><a href="./Flight.html">Flight</a></li>
+               <li><i class="fa-solid fa-hotel"></i><a href="hotel.html">Hotel</a></li>
+               <li><i class="fa-solid fa-car-rear"></i><a href="">Drive</a></li>
+            </ul>
+        </div>
+        <div class="login">
+          <span ><i class="fa-solid fa-circle-user"></i><a href="login.html">Login</a></span>
+        <div class="barbutton">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    </nav>
+    <div class="dropdownmenu">
+        <ul>
+           <li><a href="./index.html">* Home</a></li>
+           <li><a href="Trip.html">* Trip</a></li>
+           <li><a href="">* Restorant</a></li>
+           <li><a href="">* Menu</a></li>
+           <li><a href="./Flight.html">* Flight</a></li>
+           <li><a href="./hotel.html">* Hotel</a></li>
+           <li><a href="">* Drive</a></li>
+           <li><a href="">* About Us</a></li>
+           <li><a href="">* Services</a></li>
+           <li><a href="login.html">* LOGIN</a></li>
+        </ul>
+     </div>
+</header>
+<script>
+    const button = document.querySelector('.barbutton')
+    const buttonicon = document.querySelector('.barbutton i')
+    const dropmenu = document.querySelector('.dropdownmenu')
+
+    button.onclick = function(){
+        dropmenu.classList.toggle('open')
+        const isOpen =dropmenu.classList.contains('open')
+        buttonicon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+   <!-- Header part is end here  -->
+
+<main>
+    <section id="first-section">
+    <div class="pdiv1">
+           <br><br>
+      <h1 class="multitext">Plan Your Memorable trip with <br>Delicious food</h1>
+      <a href="./Trip.html"><button class="start but">View Trip</button></a>
+      <a href=""><button class="order but">Order Now</button></a>    
+         <div data-aos="fade-right" 
+         data-aos-duration="3000"  class="cdiv1">
+            <img src="./images/flight2.png" alt="">
+         </div>    
+         <div class="cdiv2">
+            <img data-aos="fade-down-left"
+            data-aos-duration="3000" class="piza1" src="./images/pizza.png" alt="">
+            <img src="./images/table.png" alt="">
+         </div>
+    </div>
+    </section><br>
+    <!-- <section id="Loginsection">
+        <div class="login-container">
+            <b>Login</b><span onclick="return Cross()"><i class="fa-solid fa-xmark"></i></span> <br><br><br>
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input type="text" id="lgname" placeholder="Username" />
+              <i class="fa fa-user"></i>
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" id="lgpass" placeholder="Password" />
+              <i class="fa fa-lock"></i>
+            </div>
+            <div class="forgot-password">
+              <a href="#">Forgot password?</a>
+            </div>
+            <button class="btn-login" onclick="return logine()">
+              Sign In <i class="fa fa-sign-in"></i>
+            </button>
+            <div class="register-link">
+              Don't have an account? <a href="Signin.html">Signin</a>
+            </div>
+          </div> 
+           <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </section> -->
+    <section id="secondsec">
+        <h4 class="text1st" data-aos="fade-up" 
+        data-aos-duration="3000">Plan your dinner with cool Places</h4>
+        <div class="twodiv">
+           <div data-aos="fade-right" data-aos-duration="2500" class="nightimg1"><a href="">Book Now</a> </div>
+           <div data-aos="fade-left"  data-aos-duration="2500" class="nightimg2"><a href="">Book Now</a> </div>
+        </div>
+    </section><br><br>
+    <section id="sectionthird">
+        <h1 data-aos="fade-up" 
+        data-aos-duration="2000">Delicious Foods</h1>
+        <div id="delicious" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom" data-aos-duration="2500">
+        <div class="fooditem">
+           <a href=""><div class="foodimg1">
+            <img src="./foodimg/burger.jpeg" alt="">
+           </div></a>
+           <a href=""><div class="foodimg2">
+            <img src="./foodimg/chole.png" alt="">
+           </div></a>
+           <a href=""><div class="foodimg3">
+            <img src="./foodimg/biriyani.png" alt="">
+           </div></a>
+           <a href=""><div class="foodimg4">
+            <img src="./foodimg/daltadka.png" alt="">
+           </div></a>
+           <a href=""><div class="foodimg5">
+            <img src="./foodimg/pizza.png" alt="">
+           </div></a>
+           <a href=""><div class="foodimg6">
+            <img src="./foodimg/idlisambar.png" alt="">
+           </div></a>
+           <a href=""><div class="foodimg7">
+            <img src="./foodimg/paneer.jpeg" alt="">
+           </div></a>
+           <a href=""><div class="foodimg8">
+            <img src="./foodimg/dosa.png" alt="">
+           </div></a>
+        </div>
+        <a href=""><b>Explore More >></b></a>
+    </div>
+  </section><br><br>
+     
+  
+  <section id="swipersection">
+      <h2 data-aos="fade-up" 
+      data-aos-duration="2500">Best Places for Enjoying Trip</h2>
+   <br><br>
+     <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src="./Hotel/palace1.png" alt=""></div>
+      <div class="swiper-slide"> <img src="./Hotel/wallpaperflare.com_wallpaper.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="https://c4.wallpaperflare.com/wallpaper/451/186/556/best-hotels-booking-pool-vacation-wallpaper-preview.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="./Hotel/swiminghotel.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src=" https://c4.wallpaperflare.com/wallpaper/860/64/842/vacation-booking-travel-best-hotels-wallpaper-preview.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="https://c4.wallpaperflare.com/wallpaper/856/437/240/booking-resort-australia-travel-wallpaper-preview.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="./Hotel/hotel7.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="https://c4.wallpaperflare.com/wallpaper/791/342/395/vacation-travel-resort-mardan-palace-wallpaper-preview.jpg" alt=""></div>
+      <div class="swiper-slide"> <img src="./Hotel/palace3.jpg" alt=""></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+  </div>
+  </section><br><br><br>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Eats & Tours</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugiat impedit non voluptatibus magnam placeat molestiae officia ad sequi aliquid nulla dolorem ratione porro deleniti rerum, beatae quod quam. Consectetur.</p>
+            <p>Email: <a href="mailto:avinashdm@outlook.com"></a></p>
+            <p>Phone: +91 - 0123456789</p>
+        </div>
+        <div class="footer-section">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Join Us</h2>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Enter your email id">
+                <button type="submit">Subscribe</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Eats & Tour © 2025 - All Rights Reserved</p>
+    </div>
+</footer>
+
+
+    
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="swiper.js"></script>
+  <script src="Script.js"></script>
+</body>
+
+</html>

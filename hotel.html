@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat&Tour</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="hotel.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+
+    <!-- Header Part is start from here  -->
+<header>
+    <nav id="navbar">
+       <a href="index.html"><img class="logo" src="./images/weblogo.png" alt=""></a>
+        <div class="navlink">
+            <ul>
+               <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+               <li><i class="fa-solid fa-umbrella-beach"></i><a href="./Trip.html">Trip</a></li>
+               <li><i class="fa-solid fa-utensils"></i><a href="">Restorant</a></li>
+               <li><i class="fa-solid fa-clipboard"></i><a href="">Menu</a></li>
+               <li><i class="fa-solid fa-plane-up"></i><a href="./Flight.html">Flight</a></li>
+               <li><i class="fa-solid fa-hotel"></i><a href="./hotel.html">Hotel</a></li>
+               <li><i class="fa-solid fa-car-rear"></i><a href="">Drive</a></li>
+            </ul>
+        </div>
+        <div class="login">
+          <span>  <i class="fa-solid fa-circle-user"></i> <a href="login.html">Login</a></span>
+        <div class="barbutton">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    </nav>
+    <div class="dropdownmenu">
+        <ul>
+           <li><a href="index.html">* Home</a></li>
+           <li><a href="./Trip.html">* Trip</a></li>
+           <li><a href="">* Restorant</a></li>
+           <li><a href="">* Menu</a></li>
+           <li><a href="./Flight.html">* Flight</a></li>
+           <li><a href="hotel.html">* Hotel</a></li>
+           <li><a href="">* Drive</a></li>
+           <li><a href="">* About Us</a></li>
+           <li><a href="">* Services</a></li>
+           <li><a href="login.html">* LOGIN</a></li>
+        </ul>
+     </div>
+</header>
+<script>
+    const button = document.querySelector('.barbutton')
+    const buttonicon = document.querySelector('.barbutton i')
+    const dropmenu = document.querySelector('.dropdownmenu')
+
+    button.onclick = function(){
+        dropmenu.classList.toggle('open')
+        const isOpen =dropmenu.classList.contains('open')
+        buttonicon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+   <!-- Header part is end here  -->
+<main>
+    <section>
+        <!-- Swiper -->
+     <div class="swiper mySwiper">
+       <div class="swiper-wrapper">
+         <div class="swiper-slide" id="swipeimg1">
+          <div> <span  data-aos="fade-up"  data-aos-anchor-placement="center-bottom" 
+        data-aos-duration="3000">Luxury Hotel & Restorant</span><br><br>
+        <h1 data-aos="fade-up">Enjoy Your Dream Time with <br>  Luxury Experience</h1><br>
+        <a href="./hotelform.html" class="book-btn" >Book Now</a>
+       </div></div>
+         <div class="swiper-slide" id="swipeimg2">           
+          <div> <span data-aos="fade-up"  data-aos-anchor-placement="center-bottom" 
+        data-aos-duration="3000">Luxury Hotel & Restorant</span><br>
+        <h1 data-aos="fade-up">Enjoy Your Dream Time with <br>  Luxury Experience</h1>
+        <a href="./hotelform.html" class="book-btn" >Book Now</a>
+       </div>
+      </div>
+         <div class="swiper-slide" id="swipeimg3">         
+            <div> <span data-aos="fade-up"  data-aos-anchor-placement="center-bottom" 
+        data-aos-duration="3000">Luxury Hotel & Restorant</span><br>
+        <h1 data-aos="fade-up">Enjoy Your Dream Time with <br>  Luxury Experience</h1>
+        <a href="./hotelform.html" class="book-btn" >Book Now</a>
+       </div>
+      </div>
+         <div class="swiper-slide" id="swipeimg4">        
+             <div> <span data-aos="fade-up"  data-aos-anchor-placement="center-bottom" 
+        data-aos-duration="3000">Luxury Hotel & Restorant</span><br>
+        <h1 data-aos="fade-up">Enjoy Your Dream Time with <br>  Luxury Experience</h1>
+        <a href="./hotelform.html" class="book-btn" >Book Now</a>
+       </div>
+      </div>
+       </div>
+       <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-pagination"></div>
+       <div class="autoplay-progress">
+         <svg viewBox="0 0 48 48">
+           <circle cx="24" cy="24" r="20"></circle>
+         </svg>
+         <span></span>
+       </div>
+     </div>
+     </section><br><br><br>
+    <section id="grid">
+        <h1>Top Hotels Collection for you</h1>
+       <div class="container">
+          <a href="./hotelform.html"> <div class="topimg1" data-aos="flip-left" data-aos-duration="2500"> <button class="book-btn" onclick="bookhotel()">Book Now</button></div></a>
+          <a href="./hotelform.html"> <div class="topimg2" data-aos="flip-left" data-aos-duration="2500"> <button class="book-btn" onclick="bookhotel()">Book Now</button></div></a>
+          <a href="./hotelform.html"> <div class="topimg3" data-aos="flip-left" data-aos-duration="2500"> <button class="book-btn" onclick="bookhotel()">Book Now</button></div></a> 
+       </div>
+    </section><br> <br>
+<section id="bestrooms">
+    <div class="container">
+        <h2>Our Best <span style="color:gold">Rooms</span></h2>
+        <div class="room-grid">
+          
+          <div class="room-card">
+            <img src="./Hotel/hotelroom2.jpg" alt="Junior Suite">
+            <div class="room-info">
+              <h4>$100/N -Junior Suite</h4>
+              <a href="./hotelform.html" class="book-btn" >Book Now</a>
+            </div>
+          </div>
+    
+          <div class="room-card">
+            <img src="./Hotel/hotelroom4.jpg" alt="Twin Room">
+            <div class="room-info">
+              <h4>$120/N -Twin Room</h4>
+              <a href="./hotelform.html" class="book-btn">Book Now</a>
+            </div>
+          </div>
+    
+          <div class="room-card">
+            <img src="./Hotel/hotelroom3.jpg" alt="Quad Room">
+            <div class="room-info">
+              <h4>$170/N - Quad Room</h4>
+              <a href="./hotelform.html" class="book-btn">Book Now</a>
+            </div>
+          </div>
+          
+          <div class="room-card">
+            <img src="./Hotel/hotelrrom1.png" alt="Junior Suite">
+            <div class="room-info">
+              <h4>$250/N -Special Room</h4>
+              <a href="./hotelform.html" class="book-btn">Book Now</a>
+            </div>
+          </div>
+    
+          <div class="room-card">
+            <img src="./Hotel/hotelroom4.jpg" alt="Twin Room">
+            <div class="room-info">
+              <h4> $200/N -Relaxible rooms</h4>
+              <a href="./hotelform.html" class="book-btn">Book Now</a>
+            </div>
+          </div>
+    
+          <div class="room-card">
+            <img src="./Hotel/hotelroom3.jpg" alt="Quad Room">
+            <div class="room-info">
+              <h4> $70/N -large Room</h4>
+              <a href="./hotelform.html" class="book-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<section class="services-section">
+    <h2>Hotel Service</h2>
+    
+    <div class="services">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./Hotel/hotelrrom1.png" alt=""></div>
+          <div class="swiper-slide"><img src="./Hotel/hotel4.png" alt=""></div>
+          <div class="swiper-slide"><img src="./Hotel/hotelroom3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Hotel/hotel7.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Hotel/hotel3.jpeg" alt=""></div>
+          <div class="swiper-slide"><img src="./Hotel/hotelroom2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./Hotel/hotel1.jpeg" alt=""></div>
+          <!-- <div class="swiper-slide"><img src="./Hotel/" alt=""></div>
+          <div class="swiper-slide"><img src="./Hotel/" alt=""></div> -->
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="./Hotel/hotelservice.png" alt="Service 1" />
+        <h3>Service 01</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus eget magna eu efficitur...</p>
+      </div>
+      <div class="service-card">
+        <img src="./Hotel/hotelservice2.png" alt="Service 2" />
+        <h3>Service 02</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus eget magna eu efficitur...</p>
+      </div>
+      <div class="service-card">
+        <img src="./Hotel/hotelservice3.png" alt="Service 3" />
+        <h3>Service 03</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus eget magna eu efficitur...</p>
+      </div>
+    </div>
+  </section>
+    <!-- <section class="hero-section">
+        <div class="hero-content">
+          <h1>WARDIERE INC.<br><span>HOTEL</span></h1>
+          <p>Perfectly comfortable meeting environment in Rimberio City.</p>
+          <ul class="facilities">
+            <li>Executive lounge access</li>
+            <li>Productive work environment</li>
+            <li>Complimentary snacks</li>
+            <li>Complete breakfast</li>
+          </ul>
+          <div class="book-now">
+            <p><strong>BOOK NOW</strong></p>
+            <p>123-456-7890</p>
+            <p>www.reallygreatsite.com</p>
+          </div>
+        </div>
+        <div class="hero-images">
+          <img src="./Hotel/hotelroom2.jpg" alt="Food on bed">
+          <img src="./Hotel/hotelroom3.jpg" alt="Room interior">
+          <img src="./Hotel/hotelroom4.jpg" alt="Drink">
+        </div>
+      </section>
+     -->
+    
+  
+
+    
+
+</main>
+
+
+   <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Eats & Tours</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugiat impedit non voluptatibus magnam placeat molestiae officia ad sequi aliquid nulla dolorem ratione porro deleniti rerum, beatae quod quam. Consectetur.</p>
+            <p>Email: <a href="mailto:avinashdm@outlook.com"></a></p>
+            <p>Phone: +91 - 0123456789</p>
+        </div>
+        <div class="footer-section">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Newsletter</h2>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Enter your email id">
+                <button type="submit">Subscribe</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Eats & Tour © 2025 - All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="swiper.js"></script>
+</body>
+</html>  

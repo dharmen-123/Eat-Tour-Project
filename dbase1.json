@@ -1,0 +1,108 @@
+{
+  "Hotels": [
+    {
+      "id": "105d",
+      "name": "Harsh Thakre",
+      "email": "harsh@gmail.com",
+      "mobile": "8876979897",
+      "country": "australia",
+      "checkin": "2025-04-18",
+      "checkout": "2025-04-21",
+      "roomtype": "Deluxe",
+      "rooms": "1",
+      "persons": "1",
+      "specialtreat": "No"
+    },
+    {
+      "id": "5db8",
+      "name": "Atul Kumar",
+      "email": "dfbdgf@yahoo.com",
+      "mobile": "9766584593",
+      "country": "india",
+      "checkin": "2025-04-22",
+      "checkout": "2025-04-25",
+      "roomtype": "Standard",
+      "rooms": "2",
+      "persons": "5",
+      "specialtreat": "Yes"
+    },
+    {
+      "id": "4bba",
+      "name": "Ravi Kumar Tiwari",
+      "email": "Ravikumar@gmail.com",
+      "mobile": "7865446798",
+      "country": "Bhopal",
+      "checkin": "2025-04-19",
+      "checkout": "2025-04-20",
+      "roomtype": "Suite",
+      "rooms": "2",
+      "persons": "5",
+      "specialtreat": "No"
+    },
+    {
+      "id": "0683",
+      "name": "Abhishek Singh",
+      "email": "abhi@gmia.com",
+      "mobile": "8876979894",
+      "country": "Gujrat",
+      "checkin": "2025-04-21",
+      "checkout": "2025-04-21",
+      "roomtype": "Simple",
+      "rooms": "2",
+      "persons": "2",
+      "specialtreat": "No"
+    },
+    {
+      "id": "385b",
+      "name": "Raju Yadav",
+      "email": "Rajkumar@gmail.com",
+      "mobile": "9738377171",
+      "country": "Indore",
+      "checkin": "2025-04-25",
+      "checkout": "2025-04-26",
+      "roomtype": "Simple",
+      "rooms": "3",
+      "persons": "3",
+      "specialtreat": "No"
+    },
+    {
+      "id": "c979",
+      "name": "Avanish Singh",
+      "email": "avinash123@gmail.com",
+      "mobile": "7473987689",
+      "country": "Riva",
+      "checkin": "2025-04-20",
+      "checkout": "2025-04-21",
+      "roomtype": "Standard",
+      "rooms": "2",
+      "persons": "4",
+      "specialtreat": "No"
+    },
+    {
+      "id": "3b1b",
+      "name": "Mukesh Ambani",
+      "email": "ambanis@mgail.com",
+      "mobile": "7479856386",
+      "country": "Mumbai",
+      "checkin": "2025-04-21",
+      "checkout": "2025-04-26",
+      "roomtype": "Standard",
+      "rooms": "6",
+      "persons": "6",
+      "specialtreat": "Yes"
+    },
+    {
+      "id": "8c4a",
+      "name": "Rajendra",
+      "email": "rajendra@gmail.com",
+      "mobile": "7479856386",
+      "country": "Goa",
+      "checkin": "2025-04-27",
+      "checkout": "2025-04-28",
+      "roomtype": "Simple",
+      "rooms": "1",
+      "persons": "2",
+      "specialtreat": "No"
+    }
+  ]
+}

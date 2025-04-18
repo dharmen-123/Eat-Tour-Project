@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background :url(./images/beechview.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+.login-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.login-container::before {
+  content: 'Login';
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0c1d36;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0 0  10px 10px;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.input-group label {
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.input-group i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.forgot-password {
+  text-align: right;
+  font-size: 0.85rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.forgot-password a {
+  color: #555;
+  text-decoration: none;
+}
+
+.btn-login {
+  width: 100%;
+  background-color: #0c1d36;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  font-weight: bold;
+  color: #0c1d36;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .login-container::before {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input type="text" id="lgname" placeholder="Username"  required/>
+      <i class="fa fa-user"></i>
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="lgpass" placeholder="Password" required/>
+      <i class="fa fa-lock"></i>
+    </div>
+    <div class="forgot-password">
+      <a href="#">Forgot password?</a>
+    </div>
+    <button type="submit" class="btn-login" onclick="return logine()">
+      Sign In 
+    </button>
+    <div class="register-link">
+      Don't have an account? <a href="Signin.html">Signin</a>
+    </div>
+  </div> 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+   <script src="Script.js"></script>
+  </body>
+</html>

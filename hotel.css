@@ -1,0 +1,386 @@
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0px;
+
+    .swiper-slide{
+      margin: auto;
+    align-content: center;
+    text-align: center;
+    
+    div{
+      color: white;
+      span{
+        color:rgba(251, 91, 5, 0.905);
+        font-size: 35px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+      }
+      h1{
+        color: transparent;
+    background: linear-gradient(to 
+    right, rgb(228, 226, 225),rgb(88, 73, 57) ,rgb(58, 29, 6),rgb(248, 133, 10),rgb(39, 14, 3),rgb(195, 134, 89),rgb(80, 40, 9));
+    background-clip : text;
+        font-size: 60px;
+        font-weight: bold;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+      .book-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: orange;
+        color: #000;
+        border-radius: 25px;
+        text-decoration: none;
+        border: none;
+        font-weight: bold;
+        transition: background 0.3s ease;
+      } 
+    }
+    }
+  }
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+#swipeimg1{
+    background: url(./Hotel/hotelrrom1.png) no-repeat center/cover;
+    
+}
+#swipeimg2{
+    background: url(./Hotel/hotelroom2.jpg) no-repeat center/cover;
+}
+#swipeimg3{
+    background: url(./Hotel/hotelroom3.jpg) no-repeat center/cover;
+}
+#swipeimg4{
+    background: url(./Hotel/hotelroom4.jpg) no-repeat center/cover;
+}
+
+/* Top collection part  */
+#grid{
+    width: 100%;
+    h1{
+      align-items: center;
+      text-align: center;
+      font-size: 45px;
+      font-style:italic;
+      font-weight: bold;
+      text-shadow:3px 3px 5px  rgb(245, 39, 39,0.5);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: rgb(121, 39, 4); 
+    }
+  
+  }
+  #grid .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(20em ,1fr));
+    gap:25px;
+    padding: 20px;
+    .topimg1{
+
+        background: url(./Hotel/palace1.png) no-repeat center center/cover;
+    }
+    .topimg2{
+        background: url( https://c4.wallpaperflare.com/wallpaper/39/785/145/presidential-suite-vacation-resort-tourism-wallpaper-preview.jpg) no-repeat center center/cover;
+    }
+    .topimg3{
+     background: url(https://c4.wallpaperflare.com/wallpaper/103/309/303/resort-australia-booking-tourism-wallpaper-preview.jpg) no-repeat center center/cover;   
+    }
+    .book-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: orange;
+        color: #000;
+        border-radius: 25px;
+        text-decoration: none;
+        border: none;
+        font-weight: bold;
+        transition: background 0.3s ease;
+      }
+    
+      .book-btn:hover {
+        background-color: #ff7a00;
+      }
+  }
+  #grid .container div{
+    height: 500px;
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 10px 1px rgb(161, 161, 162);
+    border-radius: 20px;
+    align-content:end;
+    padding-left: 40%;
+    padding-bottom: 10px;
+    /* img{
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    } */
+  }
+  
+
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background:linear-gradient(to left , rgb(140, 4, 4) , rgb(39, 3, 3))
+  }
+  
+  .hero-content {
+    flex: 1;
+    min-width: 300px;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 42px;
+    font-weight: bold;
+  }
+  
+  .hero-content span {
+    font-size: 56px;
+    color: #fff;
+  }
+  
+  .hero-content p {
+    margin: 20px 0;
+    color: #ccc;
+  } 
+  
+  .facilities {
+    list-style: none;
+    margin: 20px 0;
+  }
+  
+  .facilities li {
+    margin-bottom: 10px;
+  }
+  
+  .book-now p {
+    margin: 5px 0;
+  }
+  
+  .hero-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    min-width: 300px;
+    padding: 20px;
+  }
+  
+  .hero-images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+  }
+  
+  /* Hotel service sectio is start from here  */
+  
+  .services-section {
+    padding: 40px 20px;
+    background :linear-gradient(to right, rgb(238, 235, 234), rgb(250, 151, 3));
+    text-align: center;
+  }
+  
+  .services-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .service-card {
+    background-color: #2d1b14;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    text-align: left;
+  }
+  
+  .service-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .service-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .service-card p {
+    font-size: 20px;
+    color: #ddd;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-images {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .hero-images img {
+      max-width: 45%;
+    }
+  }
+
+
+     /* OUR BEST ROOMS CSS PART  */
+#bestrooms{
+     .container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: #1a1010;
+    margin-bottom: 20px;
+  }
+
+  .room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .room-card {
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .room-card:hover {
+    /* transform: translateY(-8px); */
+    /* transform: rotateY(90deg); */
+    transform: scale(1.3);
+    transition: 1s;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+  }
+
+  .room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .room-info {
+    padding: 15px;
+  }
+
+  .room-info h4 {
+    margin-bottom: 10px;
+    color: #f39c12;
+  }
+
+  .room-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+
+  .book-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #000;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+
+  .book-btn:hover {
+    background-color: #ff7a00;
+  }
+}
+
+/* 2nd Swiper  */
+.mySwiper2 {
+  width: 280px;
+  height: 380px;
+}
+
+.mySwiper2 .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+
+
+.swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}
+}

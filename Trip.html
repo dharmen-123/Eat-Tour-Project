@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat&Tour</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Trip.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+    <!-- Header Part is start from here  -->
+<header>
+    <nav id="navbar">
+       <a href="index.html"><img class="logo" src="./images/weblogo.png" alt=""></a>
+        <div class="navlink">
+            <ul>
+               <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+               <li><i class="fa-solid fa-umbrella-beach"></i><a href="">Trip</a></li>
+               <li><i class="fa-solid fa-utensils"></i><a href="">Restorant</a></li>
+               <li><i class="fa-solid fa-clipboard"></i><a href="">Menu</a></li>
+               <li><i class="fa-solid fa-plane-up"></i><a href="./Flight.html">Flight</a></li>
+               <li><i class="fa-solid fa-hotel"></i><a href="./hotel.html">Hotel</a></li>
+               <li><i class="fa-solid fa-car-rear"></i><a href="">Drive</a></li>
+            </ul>
+        </div>
+        <div class="login">
+          <span>  <i class="fa-solid fa-circle-user"></i> <a href="login.html">Login</a></span>
+        <div class="barbutton">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    </nav>
+    <div class="dropdownmenu">
+        <ul>
+           <li><a href="index.html">* Home</a></li>
+           <li><a href="">* Trip</a></li>
+           <li><a href="">* Restorant</a></li>
+           <li><a href="">* Menu</a></li>
+           <li><a href="./Flight.html">* Flight</a></li>
+           <li><a href="hotel.html">* Hotel</a></li>
+           <li><a href="">* Drive</a></li>
+           <li><a href="">* About Us</a></li>
+           <li><a href="">* Services</a></li>
+           <li><a href="login.html">* LOGIN</a></li>
+        </ul>
+     </div>
+</header>
+<script>
+    const button = document.querySelector('.barbutton')
+    const buttonicon = document.querySelector('.barbutton i')
+    const dropmenu = document.querySelector('.dropdownmenu')
+
+    button.onclick = function(){
+        dropmenu.classList.toggle('open')
+        const isOpen =dropmenu.classList.contains('open')
+        buttonicon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+   <!-- Header part is end here  -->
+<main>
+  <!-- Swiper -->
+  <div class="typing-container">Enjoy your memorable Adventure with Dream Places</div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./videos/meghalaya.gif" alt=""></div>
+      <div class="swiper-slide"><img src="./videos/indiagate.gif" alt=""></div>
+      <div class="swiper-slide"><video src="./videos/video2.mp4" autoplay loop muted></video></div>
+      <div class="swiper-slide"><img src="./videos/river.gif" alt=""></div>
+      <div class="swiper-slide"><video src="./videos/video6.mp4" autoplay loop muted></video></div>
+      <div class="swiper-slide"><img src="./videos/paris.gif" alt=""></div>
+      <div class="swiper-slide"><video src="./videos/video7.mp4" autoplay loop muted></video> </div>
+      <div class="swiper-slide"><video src="./videos/video3.mp4" autoplay loop muted></video></div>
+      <div class="swiper-slide"><video src="./videos/video1.mp4" autoplay loop muted></video></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+     <section class="packages">
+        <h1 class="section-title">P A K A G E S</h1>
+        <div class="package-cards">
+          <div class="card">
+            <img src="./Tripimg/Agra.jpg" alt="AGRA">
+            <h3><i class="fas fa-map-marker-alt"></i> AGRA</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Velit.</p>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <div class="price">Rs.7000<span>Rs.11000</span></div>
+            <button class="btn">Book Now</button>
+          </div>
+          <div class="card">
+            <img src="./Tripimg/AHMEDABAD.jpg" alt="AHMEDABAD">
+            <h3><i class="fas fa-map-marker-alt"></i> AHMEDABAD</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Velit.</p>
+            <div class="stars">⭐⭐⭐</div>
+            <div class="price">Rs.12000<span>Rs.16000</span></div>
+            <button class="btn">Book Now</button>
+          </div>
+          <div class="card">
+            <img src="./Tripimg/GOA.jpg" alt="GOA">
+            <h3><i class="fas fa-map-marker-alt"></i> GOA</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Velit.</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="price">Rs.9000 <span>Rs.15000</span></div>
+            <button class="btn">Book Now</button>
+          </div>
+          <div class="card">
+            <img src="./Tripimg/MUMBAI.jpg" alt="Mumbai">
+            <h3><i class="fas fa-map-marker-alt"></i> Mumbai</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Velit.</p>
+            <div class="stars">⭐⭐⭐⭐</div>
+            <div class="price">Rs.11000<span>Rs.18000</span></div>
+            <button class="btn">Book Now</button>
+          </div>
+          <div class="card">
+            <img src="./Tripimg/singapure.png" alt="SINGAPURE">
+            <h3><i class="fas fa-map-marker-alt"></i>SINGAPURE</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Velit.</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="price">Rs.50000<span>Rs.65000</span></div>
+            <button class="btn">Book Now</button>
+          </div>
+          <div class="card">
+            <img src="./Tripimg/combodia.png" alt="COMBODIA">
+            <h3><i class="fas fa-map-marker-alt"></i> COMBODIA</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Velit.</p>
+            <div class="stars">⭐⭐⭐</div>
+            <div class="price">Rs.20000<span>Rs.35000</span></div>
+            <button class="btn">Book Now</button>
+          </div>
+          <div class="card">
+            <img src="./Tripimg/MALAYSIA.jpg" alt="MALAYSIA">
+            <h3><i class="fas fa-map-marker-alt"></i> MALAYSIA</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Velit.</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="price">Rs.65000<span>Rs.85000</span></div>
+            <button class="btn">Book Now</button>
+          </div>
+          <div class="card">
+            <img src="./Tripimg/PARIS.jpg" alt="PARIS">
+            <h3><i class="fas fa-map-marker-alt"></i>PARIS</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Velit.</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="price">Rs.85000<span>Rs.100000</span></div>
+            <button class="btn">Book Now</button>
+          </div>
+          <div class="card">
+            <img src="./Tripimg/WEST-BENGAL.jpg" alt="WEST-BENGAL">
+            <h3><i class="fas fa-map-marker-alt"></i> WEST-BENGAL</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Velit.</p>
+            <div class="stars">⭐⭐⭐</div>
+            <div class="price">Rs.45999<span>Rs.55000</span></div>
+            <button class="btn">Book Now</button>
+          </div>
+        </div>
+      </section>
+     
+      <section id="Gallery-section">
+        <h2 class="gallery-title"> Adventure GALLERY</h2><br><br>
+        <div class="gallery-grid">
+        <div>
+          <video src="./videos/video7.mp4" autoplay loop muted></video>
+          <img src="./videos/indiagate.gif" alt="">
+           <video src="./videos/video8.mp4" autoplay loop muted></video>
+           <img src="./videos/agra.gif" alt="">
+        </div>
+        <div>
+          <img src="./videos/river.gif" alt="">
+          <video src="./videos/video5.mp4" autoplay loop muted></video>
+          <img src="./videos/goa.gif" alt="">
+          <video src="./videos/video1.mp4" autoplay loop muted></video>
+        </div>
+        <div>
+          <video src="./videos/video6.mp4" autoplay loop muted></video>
+          <img src="./videos/paris.gif" alt="">
+          <video src="./videos/video2.mp4" autoplay loop muted></video>
+          <img src="./videos/meghalaya.gif" alt="">
+        </div>
+      </div>
+      </section>
+
+      <section class="services-section">
+        <h2 class="section-title">S E R V I C E S</h2>
+        <div class="services-grid">
+          <div class="service-box">
+            <i class="fa fa-hotel"></i>
+            <h3>Affordable Hotels</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+          </div>
+          <div class="service-box">
+            <i class="fa fa-utensils"></i>
+            <h3>Food And Drinks</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+          </div>
+          <div class="service-box">
+            <i class="fa fa-bullhorn"></i>
+            <h3>Safety Guide</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+          </div>
+          <div class="service-box">
+            <i class="fa fa-globe"></i>
+            <h3>Around The World</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+          </div>
+          <div class="service-box">
+            <i class="fa fa-plane"></i>
+            <h3>Fastest Travel</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+          </div>
+          <div class="service-box">
+            <i class="fa fa-hiking"></i>
+            <h3>Adventures</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+          </div>
+        </div>
+      </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Eats & Tours</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugiat impedit non voluptatibus magnam placeat molestiae officia ad sequi aliquid nulla dolorem ratione porro deleniti rerum, beatae quod quam. Consectetur.</p>
+            <p>Email: <a href="mailto:avinashdm@outlook.com"></a></p>
+            <p>Phone: +91 - 0123456789</p>
+        </div>
+        <div class="footer-section">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Join Us</h2>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Enter your email id">
+                <button type="submit">Subscribe</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Eats & Tour © 2025 - All Rights Reserved</p>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="Trip.js">
+ </script>
+ <script src="Script.js"></script>
+</body>
+</html>

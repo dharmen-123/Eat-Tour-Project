@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Order Slider</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .slider-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+      padding-bottom: 10px;
+    }
+
+    .card {
+      display: inline-block;
+      background-color: white;
+      width: 350px;
+      margin-right: 16px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      vertical-align: top;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .restaurant-name {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .info {
+      color: gray;
+      font-size: 0.9em;
+      margin-bottom: 8px;
+    }
+
+    .offers {
+      font-size: 0.85em;
+      background-color: #e6f4ea;
+      color: #1e8f4b;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 768px) {
+      .card {
+        width: 80%;
+        margin-right: 10px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Restaurants Near You</h2>
+  <div class="slider-container">
+    <!-- Repeat this card for 10 times -->
+    <div class="card">
+      <img src=" ./Hotel/hotel2.jpeg" alt="Restaurant">
+      <div class="card-content">
+        <div class="restaurant-name">The Cube by Effotel Sayaji</div>
+        <div class="info">Chinese · North Indian · ₹1000 for two · 79 km</div>
+        <div class="offers">Flat 15% off on pre-booking</div><br>
+        <div class="offers">Up to 10% off with bank offers</div>
+      </div>
+    </div>
+    <div class="card">
+        <img src="./Hotel/hotel3.jpeg" alt="Restaurant">
+        <div class="card-content">
+          <div class="restaurant-name">The Cube by Effotel Sayaji</div>
+          <div class="info">Chinese · North Indian · ₹1000 for two · 79 km</div>
+          <div class="offers">Flat 15% off on pre-booking</div><br>
+          <div class="offers">Up to 10% off with bank offers</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Hotel/hotelroom3.jpg" alt="Restaurant">
+        <div class="card-content">
+          <div class="restaurant-name">The Cube by Effotel Sayaji</div>
+          <div class="info">Chinese · North Indian · ₹1000 for two · 79 km</div>
+          <div class="offers">Flat 15% off on pre-booking</div><br>
+          <div class="offers">Up to 10% off with bank offers</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Hotel/hotel1.jpeg" alt="Restaurant">
+        <div class="card-content">
+          <div class="restaurant-name">The Cube by Effotel Sayaji</div>
+          <div class="info">Chinese · North Indian · ₹1000 for two · 79 km</div>
+          <div class="offers">Flat 15% off on pre-booking</div><br>
+          <div class="offers">Up to 10% off with bank offers</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/280x160.png?text=Restaurant+1" alt="Restaurant">
+        <div class="card-content">
+          <div class="restaurant-name">The Cube by Effotel Sayaji</div>
+          <div class="info">Chinese · North Indian · ₹1000 for two · 79 km</div>
+          <div class="offers">Flat 15% off on pre-booking</div><br>
+          <div class="offers">Up to 10% off with bank offers</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/280x160.png?text=Restaurant+1" alt="Restaurant">
+        <div class="card-content">
+          <div class="restaurant-name">The Cube by Effotel Sayaji</div>
+          <div class="info">Chinese · North Indian · ₹1000 for two · 79 km</div>
+          <div class="offers">Flat 15% off on pre-booking</div><br>
+          <div class="offers">Up to 10% off with bank offers</div>
+        </div>
+      </div>
+    <!-- Copy/Paste the card above and change contents for rest of the 9 cards -->
+    <!-- For demo purpose, using same content -->
+    <!-- Repeat as needed -->
+    <!-- CARD 2 to 10 -->
+    <!-- Sample for another card -->
+    <div class="card">
+      <img src="https://via.placeholder.com/280x160.png?text=Pizza+Hut" alt="Pizza Hut">
+      <div class="card-content">
+        <div class="restaurant-name">Pizza Hut</div>
+        <div class="info">Pizza · Beverages · ₹800 for two · 22 km</div>
+        <div class="offers">Up to 10% off with bank offers</div><br>
+        <div class="offers">Get extra ₹666 off using SWIGGY6</div>
+      </div>
+    </div>
+
+    <!-- Add 8 more similar cards here -->
+  </div>
+
+</body>
+</html>

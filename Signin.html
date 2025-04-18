@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign up</title>
+  <link rel="stylesheet" href="Signin.css" />
+</head>
+<body>
+  <div class="container">
+    <form class="form">
+      <div class="form-header">Sign in</div>
+
+      <div class="input-group">
+        <input type="text" id="uname"  placeholder="Username" required />
+        <span class="icon">👤</span>
+      </div>
+
+      <div class="input-group">
+        <input type="email" placeholder="Email" required />
+        <span class="icon">✉</span>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="upass" placeholder="Password" required />
+        <span class="icon">🔒</span>
+      </div>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" required />
+        <label for="terms">I agree to the terms & condition</label>
+      </div>
+
+      <button type="submit" class="submit-btn" onclick="return sinup()">
+        Sign Up <span>➕</span>
+      </button>
+
+      <div class="login-link">
+        Already have an account? <a href="login.html">Login</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="Script.js">
+    document.querySelector('.form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Form Submitted!');
+});
+  </script>
+</body>
+</html>
