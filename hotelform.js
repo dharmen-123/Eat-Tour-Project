@@ -36,54 +36,66 @@ let Del=(id)=>{
     fetch(url,{method:"DELETE"})
   }
 
+  let Upd=async(id)=>{
 
-// let Details=()=>{
+    let url=`http://localhost:3000/Hotels/${id}`
+    let res = await fetch(url,{method:"GET"})
+ 
+    let data=await res.json()
+    console.log(data);
+    let updform = document.querySelector('#updform')
+        updform.innerHTML = `
+          <div class="booking-container">
+    <h1>BOOK A ROOM</h1>
+    <div class="form-wrapper">
+      <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80" alt="Room" class="room-img" />
+      
+      <form class="booking-form" >
+        <div class="form-row">
+          <input type="text" id="upname"  placeholder="Username"/>
+          <input type="text" id="upemail"  placeholder="example@email.com"/>
+        </div>
+        <div class="form-row">
+          <input type="text" id="upmobile"  placeholder="Phone Number" />
+          <input type="text" id="upcountry" placeholder="City"  />
+        </div>
+        <div class="form-row">
+          <div>
+          <h2>Check in date</h2>
+          <input type="date" id="upcheckin"  placeholder="Check In" />
+        </div>
+        <div>
+          <h2>Check out date</h2>
+          <input type="date" id="upcheckout" placeholder="Check Out" />
+        </div>
+        </div>
+        <div class="form-row">
+          <select  id="uproomtype" >
+            <option disabled selected>Room Type</option>
+            <option>Simple</option>
+            <option>Deluxe</option>
+            <option>Standard</option>
+            <option>Suite</option>
+          </select>
+          <input type="number" id="uprooms" placeholder="No. of Rooms" >
+        </div>
+        <div class="form-row">
+          <input type="number" id="uppersons" placeholder="No. of person" >
+          <select id="upspecialtreat" >
+            <option disabled selected>Special Treatment</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+        <button type="submit" onclick="return Details()">Book Now!</button>
+      </form>     
+      
+    </div>
+    <footer>@ 2025 Book a Room. All rights reserved |</footer>
+  </div>
+    `
+ }
 
-//     let inpname = document.querySelector('#name').value
-//     let inpemail = document.querySelector('#email').value
-//     let inpnum = document.querySelector('#mobile').value
-//     let inpcount = document.querySelector('#country').value
-//     let inpcheckin = document.querySelector('#checkin').value
-//     let inpcheckout = document.querySelector('#checkout').value
-//     let inptype = document.querySelector('#roomtype').value
-//     let inproom = document.querySelector('#rooms').value
-//     let inpperson = document.querySelector('#persons').value
-//     let inpspecial = document.querySelector('#specialtreat').value
-
-
-//     let  url="http://localhost:3000/Hotels"
-//     fetch(url,{method:"POST",
-//       headers:{
-//           "Content-Type":"application/json"
-//       },
-//       body:JSON.stringify(
-//       {
-//           "name":inpname,
-//           "email":inpemail,
-//           "mobile":inpnum,
-//           "country":inpcount,
-//           "checkin":inpcheckin,
-//           "checkout":inpcheckout,
-//           "roomtype":inptype,
-//           "rooms":inproom,
-//           "persons":inpperson,
-//           "specialtreat":inpspecial
-//       })
-//     })
-
-
-//     Swal.fire({
-//       title: "Booking Confirm",
-//       icon: "success",
-//       draggable: true
-
-//     }).then((result) => {
-
-//       location.href="./hotel.html"
-
-//     })
-// return false
-// }
 
 let Details=()=>{
 
