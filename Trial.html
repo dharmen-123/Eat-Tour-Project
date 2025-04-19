@@ -1,174 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Order Slider</title>
+  <title>Holiday Booking Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
     }
-
     body {
-      background-color: #f4f4f4;
-      padding: 20px;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
     }
-
-    .slider-container {
-      overflow-x: auto;
-      white-space: nowrap;
-      scroll-behavior: smooth;
-      padding-bottom: 10px;
-    }
-
-    .card {
-      display: inline-block;
-      background-color: white;
-      width: 350px;
-      margin-right: 16px;
+    .booking-form {
+      background: white;
+      padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-      vertical-align: top;
-      animation: fadeIn 0.5s ease-in-out;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card img {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 800px;
       width: 100%;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      height: 160px;
-      object-fit: cover;
+      animation: fadeIn 1s ease-in-out;
     }
-
-    .card-content {
-      padding: 15px;
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1.5rem;
     }
-
-    .restaurant-name {
-      font-size: 1.1em;
-      font-weight: bold;
-      margin-bottom: 5px;
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem 2rem;
     }
-
-    .info {
-      color: gray;
-      font-size: 0.9em;
-      margin-bottom: 8px;
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
     }
-
-    .offers {
-      font-size: 0.85em;
-      background-color: #e6f4ea;
-      color: #1e8f4b;
-      padding: 5px 10px;
+    input, select {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #ccc;
       border-radius: 5px;
-      margin-bottom: 6px;
-      display: inline-block;
+      font-size: 1rem;
     }
-
+    .full-width {
+      grid-column: span 2;
+    }
+    button {
+      background: #28a745;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #218838;
+    }
+    @media (max-width: 768px) {
+      form {
+        grid-template-columns: 1fr;
+      }
+      .full-width {
+        grid-column: span 1;
+      }
+    }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    @media screen and (max-width: 768px) {
-      .card {
-        width: 80%;
-        margin-right: 10px;
-      }
-    }
-
-    @media screen and (max-width: 480px) {
-      .card {
-        width: 90%;
-      }
-    }
   </style>
 </head>
 <body>
-
-  <h2>Restaurants Near You</h2>
-  <div class="slider-container">
-    <!-- Repeat this card for 10 times -->
-    <div class="card">
-      <img src=" ./Hotel/hotel2.jpeg" alt="Restaurant">
-      <div class="card-content">
-        <div class="restaurant-name">The Cube by Effotel Sayaji</div>
-        <div class="info">Chinese · North Indian · ₹1000 for two · 79 km</div>
-        <div class="offers">Flat 15% off on pre-booking</div><br>
-        <div class="offers">Up to 10% off with bank offers</div>
+  <div class="booking-form">
+    <h2>Find Holidays</h2>
+    <form id="holidayForm" onsubmit="validateForm(event)">
+      <div>
+        <label for="departing">Departing From:</label>
+        <input type="text" id="departing" name="departing" placeholder="e.g. Any London" required>
       </div>
-    </div>
-    <div class="card">
-        <img src="./Hotel/hotel3.jpeg" alt="Restaurant">
-        <div class="card-content">
-          <div class="restaurant-name">The Cube by Effotel Sayaji</div>
-          <div class="info">Chinese · North Indian · ₹1000 for two · 79 km</div>
-          <div class="offers">Flat 15% off on pre-booking</div><br>
-          <div class="offers">Up to 10% off with bank offers</div>
-        </div>
+      <div>
+        <label for="nights">Number of Nights:</label>
+        <select id="nights" name="nights" required>
+          <option value="">Select nights</option>
+          <option>3 nights</option>
+          <option>7 nights</option>
+          <option>14 nights</option>
+        </select>
       </div>
-      <div class="card">
-        <img src="./Hotel/hotelroom3.jpg" alt="Restaurant">
-        <div class="card-content">
-          <div class="restaurant-name">The Cube by Effotel Sayaji</div>
-          <div class="info">Chinese · North Indian · ₹1000 for two · 79 km</div>
-          <div class="offers">Flat 15% off on pre-booking</div><br>
-          <div class="offers">Up to 10% off with bank offers</div>
-        </div>
+      <div>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" placeholder="e.g. Sunny Beach, BG" required>
       </div>
-      <div class="card">
-        <img src="./Hotel/hotel1.jpeg" alt="Restaurant">
-        <div class="card-content">
-          <div class="restaurant-name">The Cube by Effotel Sayaji</div>
-          <div class="info">Chinese · North Indian · ₹1000 for two · 79 km</div>
-          <div class="offers">Flat 15% off on pre-booking</div><br>
-          <div class="offers">Up to 10% off with bank offers</div>
-        </div>
+      <div>
+        <label for="people">Number of People:</label>
+        <select id="people" name="people" required>
+          <option value="">Select people</option>
+          <option>1 person</option>
+          <option>2 people</option>
+          <option>3 people</option>
+          <option>4+ people</option>
+        </select>
       </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/280x160.png?text=Restaurant+1" alt="Restaurant">
-        <div class="card-content">
-          <div class="restaurant-name">The Cube by Effotel Sayaji</div>
-          <div class="info">Chinese · North Indian · ₹1000 for two · 79 km</div>
-          <div class="offers">Flat 15% off on pre-booking</div><br>
-          <div class="offers">Up to 10% off with bank offers</div>
-        </div>
+      <div>
+        <label for="leaving">Leaving On:</label>
+        <input type="date" id="leaving" name="leaving" required>
       </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/280x160.png?text=Restaurant+1" alt="Restaurant">
-        <div class="card-content">
-          <div class="restaurant-name">The Cube by Effotel Sayaji</div>
-          <div class="info">Chinese · North Indian · ₹1000 for two · 79 km</div>
-          <div class="offers">Flat 15% off on pre-booking</div><br>
-          <div class="offers">Up to 10% off with bank offers</div>
-        </div>
+      <div class="full-width">
+        <label></label><br>
+        <button type="submit">Search Holidays</button>
       </div>
-    <!-- Copy/Paste the card above and change contents for rest of the 9 cards -->
-    <!-- For demo purpose, using same content -->
-    <!-- Repeat as needed -->
-    <!-- CARD 2 to 10 -->
-    <!-- Sample for another card -->
-    <div class="card">
-      <img src="https://via.placeholder.com/280x160.png?text=Pizza+Hut" alt="Pizza Hut">
-      <div class="card-content">
-        <div class="restaurant-name">Pizza Hut</div>
-        <div class="info">Pizza · Beverages · ₹800 for two · 22 km</div>
-        <div class="offers">Up to 10% off with bank offers</div><br>
-        <div class="offers">Get extra ₹666 off using SWIGGY6</div>
-      </div>
-    </div>
-
-    <!-- Add 8 more similar cards here -->
+    </form>
   </div>
+  <script>
+    function validateForm(event) {
+      event.preventDefault();
+      const form = document.getElementById('holidayForm');
+      const fields = ['departing', 'nights', 'destination', 'people', 'leaving'];
+      let valid = true;fields.forEach(field => {
+    const input = document.getElementById(field);
+    if (!input.value) {
+      input.style.borderColor = 'red';
+      valid = false;
+    } else {
+      input.style.borderColor = '#ccc';
+    }
+  });
 
+  if (valid) {
+    alert("Holiday search submitted successfully!");
+    form.reset();
+  } else {
+    alert("Please fill in all fields.");
+  }
+}
+
+  </script>
 </body>
 </html>

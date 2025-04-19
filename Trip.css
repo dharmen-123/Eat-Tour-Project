@@ -265,3 +265,67 @@
     color: orange;
     margin-bottom: 15px;
   }
+
+  /* form booking  */
+  .booking-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    border: 2px solid rgb(174, 17, 17);
+    animation: fadeIn 1s ease-in-out;
+  }
+  h2 {
+    text-align: center;
+    color: #0a7cf6;
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  input, select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .full-width {
+    grid-column: span 2;
+  }
+  button {
+    background: #28a745;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  button:hover {
+    background: #218838;
+  }
+  @media (max-width: 768px) {
+    form {
+      grid-template-columns: 1fr;
+    }
+    .full-width {
+      grid-column: span 1;
+    }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

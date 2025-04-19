@@ -226,6 +226,49 @@
           </div>
         </div>
       </section>
+
+      <section>
+        <div class="booking-form">
+          <h2>Find Holiday Trip</h2>
+          <form id="holidayForm" onsubmit="validateForm(event)">
+            <div>
+              <label for="departing">Departing From:</label>
+              <input type="text" id="departing" name="departing" placeholder="e.g. Any London" required>
+            </div>
+            <div>
+              <label for="nights">Number of Nights:</label>
+              <select id="nights" name="nights" required>
+                <option value="">Select nights</option>
+                <option>3 nights</option>
+                <option>7 nights</option>
+                <option>14 nights</option>
+              </select>
+            </div>
+            <div>
+              <label for="destination">Destination:</label>
+              <input type="text" id="destination" name="destination" placeholder="e.g. Sunny Beach, BG" required>
+            </div>
+            <div>
+              <label for="people">Number of People:</label>
+              <select id="people" name="people" required>
+                <option value="">Select people</option>
+                <option>1 person</option>
+                <option>2 people</option>
+                <option>3 people</option>
+                <option>4+ people</option>
+              </select>
+            </div>
+            <div>
+              <label for="leaving">Leaving On:</label>
+              <input type="date" id="leaving" name="leaving" required>
+            </div>
+            <div class="full-width">
+              <label></label><br>
+              <button type="submit">Search Holidays</button>
+            </div>
+          </form>
+        </div>
+      </section><br><br><br>
 </main>
 
 <footer>
@@ -267,7 +310,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="Trip.js">
  </script>
  <script src="Script.js"></script>
