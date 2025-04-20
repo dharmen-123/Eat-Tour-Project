@@ -161,6 +161,13 @@ main {
     }
   }
 
+.tablediv{
+  display: grid;
+  grid-template-columns: auto;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
 .datatable{
   /* align-items: center; */
   margin: auto;

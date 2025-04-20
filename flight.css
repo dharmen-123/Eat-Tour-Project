@@ -11,7 +11,7 @@
 }
 .plane {
     position:relative;
-    top: 10%;
+    /* top: 10%; */
     width: 800px;
     height: 400px;
     animation: fly 6s linear infinite;
@@ -23,7 +23,7 @@
       font-size: 30px !important;
     }
   .plane{
-    top: 10%;
+    /* top: 10%; */
     width: 400px;
     height: 200px;
   }
@@ -39,10 +39,7 @@
       width: 250px !important;
     };
   }
-  .plane{
-    position: relative;
-    top: 20%;
-  }
+  
   
 }
   
@@ -92,8 +89,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:center;
-        gap: 20rem;
-    
+        column-gap: 10em;   
         div{
         width: 400px;
         border-radius: 20px;

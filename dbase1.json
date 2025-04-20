@@ -77,19 +77,6 @@
       "rooms": "1",
       "persons": "2",
       "specialtreat": "Yes"
-    },
-    {
-      "name": "Avanish Singh",
-      "email": "Ravikumar@gmail.com",
-      "mobile": "8876979896",
-      "country": "Indore",
-      "checkin": "2025-04-22",
-      "checkout": "2025-04-24",
-      "roomtype": "Suite",
-      "rooms": "3",
-      "persons": "3",
-      "specialtreat": "Special Treatment",
-      "id": "f33a"
     }
   ]
 }
