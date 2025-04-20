@@ -23,17 +23,43 @@ let Hoteldata=async()=>{
             <td>${key.persons}</td>
             <td>${key.specialtreat}</td>
             <td>${key.persons*500*key.rooms}</td>
-            <td align="center" onclick="Del('${key.id}')"><i class="fa-solid fa-trash"></i></td>
+            <td align="center" onclick="confirmdel('${key.id}')"><i class="fa-solid fa-trash"></i></td>
             <td onclick="Upd('${key.id}')"><i class="fa-solid fa-pen-to-square"></i></td>
             </tr>
     `
   }) 
 }
 
-let Del=(id)=>{
+let confirmdel=(id)=>{
 
-    let url=`http://localhost:3000/Hotels/${id}` 
-    fetch(url,{method:"DELETE"})
+  Swal.fire({
+    title: "Are you sure?",
+    text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        title: "Deleted!",
+        text: "Your file has been deleted.",
+        icon: "success"
+      }).then(()=>{
+        Del(id)
+      })
+    }
+  });
+
+}
+
+let Del=(id)=>{
+ 
+      let url=`http://localhost:3000/Hotels/${id}` 
+      fetch(url,{method:"DELETE"})
+
+   
   }
 
   let Upd=async(id)=>{
@@ -43,8 +69,9 @@ let Del=(id)=>{
  
     let data=await res.json()
     console.log(data);
-    let updform = document.querySelector('#updform')
+    let updform = document.querySelector('#updformnew')
         updform.innerHTML = `
+        <div id="maindiv">
           <div class="booking-container">
     <h1>BOOK A ROOM</h1>
     <div class="form-wrapper">
@@ -52,50 +79,95 @@ let Del=(id)=>{
       
       <form class="booking-form" >
         <div class="form-row">
-          <input type="text" id="upname"  placeholder="Username"/>
-          <input type="text" id="upemail"  placeholder="example@email.com"/>
+          <input type="text" id="upname"  placeholder="Username" value="${data.name}"/>
+          <input type="text" id="upemail"  placeholder="example@email.com" value="${data.email}"/>
         </div>
         <div class="form-row">
-          <input type="text" id="upmobile"  placeholder="Phone Number" />
-          <input type="text" id="upcountry" placeholder="City"  />
+          <input type="text" id="upmobile"  placeholder="Phone Number" value="${data.mobile}"/>
+          <input type="text" id="upcountry" placeholder="City"  value="${data.country}"/>
         </div>
         <div class="form-row">
           <div>
           <h2>Check in date</h2>
-          <input type="date" id="upcheckin"  placeholder="Check In" />
+          <input type="date" id="upcheckin"  placeholder="Check In" value="${data.checkin}"/>
         </div>
         <div>
           <h2>Check out date</h2>
-          <input type="date" id="upcheckout" placeholder="Check Out" />
+          <input type="date" id="upcheckout" placeholder="Check Out" value="${data.checkout}" />
         </div>
         </div>
         <div class="form-row">
-          <select  id="uproomtype" >
+          <select  id="uproomtype"  value="${data.roomtype}">
             <option disabled selected>Room Type</option>
             <option>Simple</option>
             <option>Deluxe</option>
             <option>Standard</option>
             <option>Suite</option>
           </select>
-          <input type="number" id="uprooms" placeholder="No. of Rooms" >
+          <input type="number" id="uprooms" placeholder="No. of Rooms" value="${data.rooms}">
         </div>
         <div class="form-row">
-          <input type="number" id="uppersons" placeholder="No. of person" >
-          <select id="upspecialtreat" >
+          <input type="number" id="uppersons" placeholder="No. of person" value="${data.persons}">
+          <select id="upspecialtreat" value="${data.specialtreat}">
             <option disabled selected>Special Treatment</option>
             <option>Yes</option>
             <option>No</option>
           </select>
         </div>
-        <button type="submit" onclick="return Details()">Book Now!</button>
+        <button type="submit" onclick="return Finalupd('${data.id}')">Book Now!</button>
       </form>     
       
     </div>
     <footer>@ 2025 Book a Room. All rights reserved |</footer>
   </div>
+  </div>
     `
  }
 
+let Finalupd=(id)=>{
+      
+  let name = document.getElementById("upname").value;
+  let email = document.getElementById("upemail").value;
+  let mobile = document.getElementById("upmobile").value;
+  let country = document.getElementById("upcountry").value;
+  let checkin = document.getElementById("upcheckin").value;
+  let checkout = document.getElementById("upcheckout").value;
+  let roomtype = document.getElementById("uproomtype").value;
+  let rooms = document.getElementById("uprooms").value;
+  let persons = document.getElementById("uppersons").value;
+  let specialtreat = document.getElementById("upspecialtreat").value;
+
+  let  url=`http://localhost:3000/Hotels/${id}`
+  fetch(url,{method:"PUT",
+    headers:{
+        "Content-Type":"application/json"
+    },
+    body:JSON.stringify(
+    {
+        "name":name,
+        "email":email,
+        "mobile":mobile,
+        "country":country,
+        "checkin":checkin,
+        "checkout":checkout,
+        "roomtype":roomtype,
+        "rooms":rooms,
+        "persons":persons,
+        "specialtreat":specialtreat
+    })
+  })
+  Swal.fire({
+    title: "Booking Confirm",
+    icon: "success",
+    draggable: true
+
+  }).then((result)=>{
+    location.href="./hotel.html";
+
+  })
+  return false
+
+}
 
 let Details=()=>{
 
