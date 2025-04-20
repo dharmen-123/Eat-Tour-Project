@@ -11,9 +11,9 @@
 }
 .plane {
     position:relative;
-    top: 5%;
+    top: 10%;
     width: 800px;
-    height: 500px;
+    height: 400px;
     animation: fly 6s linear infinite;
   }
 
@@ -23,10 +23,27 @@
       font-size: 30px !important;
     }
   .plane{
+    top: 10%;
     width: 400px;
     height: 200px;
   }
 }
+}
+@media(max-width:600px){
+  .mySwiper2 {
+    width: 200px !important;
+    height: 350px !important;
+  }
+  .flyoption{
+    div{
+      width: 250px !important;
+    };
+  }
+  .plane{
+    position: relative;
+    top: 20%;
+  }
+  
 }
   
   /* @keyframes fly {
@@ -74,8 +91,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content:space-between;
-        /* gap: 20rem; */
+        justify-content:center;
+        gap: 20rem;
     
         div{
         width: 400px;
@@ -99,7 +116,7 @@
 
 /* 2nd Swiper  */
 .mySwiper2 {
-    width: auto;
+    width: 400px ;
     height: 450px;
   }
   
@@ -113,7 +130,7 @@
     color: #fff;
   
   
-  .swiper-slide:nth-child(1n) {
+  /* .swiper-slide:nth-child(1n) {
     background-color: rgb(206, 17, 17);
   }
   
@@ -151,7 +168,7 @@
   
   .swiper-slide:nth-child(10n) {
     background-color: rgb(54, 94, 77);
-  }
+  } */
   }
 
 
