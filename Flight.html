@@ -25,13 +25,14 @@
                <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
                <li><i class="fa-solid fa-umbrella-beach"></i><a href="Trip.html">Trip</a></li>
                <li><i class="fa-solid fa-utensils"></i><a href="">Restorant</a></li>
-               <li><i class="fa-solid fa-clipboard"></i><a href="">Menu</a></li>
+               <li><i class="fa-solid fa-clipboard"></i><a href="">About</a></li>
                <li><i class="fa-solid fa-plane-up"></i><a href="./Flight.html">Flight</a></li>
                <li><i class="fa-solid fa-hotel"></i><a href="./hotel.html">Hotel</a></li>
-               <li><i class="fa-solid fa-car-rear"></i><a href="">Drive</a></li>
+               <li><i class="fa-solid fa-car-rear"></i><a href="">Services</a></li>
             </ul>
         </div>
         <div class="login">
+            <b><a href="./database.html"><i class="fa-solid fa-cart-shopping"></i></a></b>
           <span>  <i class="fa-solid fa-circle-user"></i> <a href="login.html">Login</a></span>
         <div class="barbutton">
             <i class="fa-solid fa-bars"></i>
@@ -42,14 +43,13 @@
     <div class="dropdownmenu">
         <ul>
            <li><a href="index.html">* Home</a></li>
-           <li><a href="">* Trip</a></li>
+           <li><a href="./Trip.html">* Trip</a></li>
            <li><a href="">* Restorant</a></li>
-           <li><a href="">* Menu</a></li>
            <li><a href="./Flight.html">* Flight</a></li>
            <li><a href="hotel.html">* Hotel</a></li>
-           <li><a href="">* Drive</a></li>
            <li><a href="">* About Us</a></li>
            <li><a href="">* Services</a></li>
+           <li><a href="database.html">* Booking</a></li>
            <li><a href="login.html">* LOGIN</a></li>
         </ul>
      </div>
@@ -69,8 +69,174 @@
 </script>
    <!-- Header part is end here  -->
 <main>
+   
+    <section id="flightsec1">
+        <div data-aos="fade-right" 
+        data-aos-duration="2000">
+        <img src="/Flightimg/flight2.png" class="plane" alt="Flying Plane">
+    </div>
+        <h1>Travel Around The World</h1>
+        <div class="booking-form">
+            <select>
+              <option>Economy</option>
+              <option>Business</option>
+            </select>
+            <input type="text" placeholder="Location">
+            <input type="text" placeholder="To">
+            <input type="date">
+            <input type="date">
+            <input type="number" placeholder="Travelers">
+            <button onclick="return Searchf()">Search Flight</button>
+          </div>
+    </section>
+    <section id="secondflight"><br><br><br>
+        <div class="flyoption">
+            <div class="textdiv">
+                <h1>Flights Options</h1><br><br><br>
+                <h3>Every Flight is a chance to see the world with new eyes <br>Plan Your Journey with us and convert your dream into reality with your choices flights</h3>
+                <h4>“Traveling is a brutality. It forces you to trust strangers and to lose sight of all that familiar comfort of home and friends. You are constantly off balance. Nothing is yours except the essential things: air, sleep, dreams, sea, the sky—all things tending towards the eternal or what we imagine of it.” </h4>
+                <!-- <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quasi adipisci officiis quis doloribus obcaecati mollitia, laudantium vitae perferendis accusantium, nostrum quam, deleniti consectetur molestias temporibus odit ducimus tempora! Tempore!</h3> -->
+            </div>
+            <div>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./Flightimg/flight1st.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./Flightimg/airline2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./Flightimg/airline8.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./Flightimg/airline4.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./Flightimg/airline5.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./Flightimg/airline6.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./Flightimg/airline7.png" alt=""></div>
+                      <!-- <div class="swiper-slide"><img src="./Hotel/" alt=""></div>
+                      <div class="swiper-slide"><img src="./Hotel/" alt=""></div> -->
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section><br> <br>
 
-  
+    <section>
+        <div class="container">
+            <h2>Make Memories With Us</h2>
+            <div class="image-gallery">
+              <img src="./Flightimg/memory1.png" alt="Image 1">
+              <img src="./Flightimg/memory2.png" alt="Image 2">
+              <img src="./Flightimg/memory3.png" alt="Image 3">
+              <img src="./Flightimg/memory4.png" alt="Image 4">
+            </div>
+          </div> 
+           <div class="container">
+            <h2>Our Features</h2>
+            <div class="features">
+              <div class="feature">
+                <i class="fas fa-map-signs"></i>
+                <h3>Best Guide</h3>
+                <p>Experience the best with <br>our professional guides.</p>
+                <a href="#">&#8594;</a>
+              </div>
+              <div class="feature">
+                <i class="fas fa-percent"></i>
+                <h3>More Discount</h3>
+                <p>Enjoy great discounts on <br>amazing tours.</p>
+                <a href="#">&#8594;</a>
+              </div>
+              <div class="feature">
+                <i class="fas fa-lock"></i>
+                <h3>Private</h3>
+                <p>Your privacy is our priority <br>on every journey.</p>
+                <a href="#">&#8594;</a>
+              </div>
+              <div class="feature">
+                <i class="fas fa-headset"></i>
+                <h3>Online Support</h3>
+                <p>24/7 support to help you <br> anytime, anywhere.</p>
+                <a href="#">&#8594;</a>
+              </div>
+            </div>
+    </section>
+    <br><br>
+<section id="bookingsec">
+    <div class="container">
+        <h2>Flight Booking Form</h2>
+        <form id="bookingForm">
+          <div class="form-group">
+            <label>From</label>
+            <input type="text" name="from" required />
+          </div>
+          <div class="form-group">
+            <label>To</label>
+            <input type="text" name="to" required />
+          </div>
+          <div class="form-group">
+            <label>Preferred Airline</label>
+            <input type="text" name="airline" />
+          </div>
+          <div class="form-group">
+            <label>Preferred Seating</label>
+            <select name="seating">
+              <option>Window</option>
+              <option>Aisle</option>
+              <option>Middle</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Departure Date</label>
+            <input type="date" name="departure_date" required />
+          </div>
+          <div class="form-group">
+            <label>Departure Time</label>
+            <input type="time" name="departure_time" required />
+          </div>
+          <div class="form-group">
+            <label>Adults (12+)</label>
+            <input type="number" name="adults" min="0" required />
+          </div>
+          <div class="form-group">
+            <label>Children (2-11 yrs)</label>
+            <input type="number" name="children" min="0" />
+          </div>
+          <div class="form-group">
+            <label>Infants (under 2 yrs)</label>
+            <input type="number" name="infants" min="0" />
+          </div>
+          <div class="form-group full-width">
+            <label>Select Your Fare</label>
+            <div class="radio-group">
+              <label><input type="radio" name="fare" value="One Way" required /> One Way</label>
+              <label><input type="radio" name="fare" value="Round Trip" /> Round Trip</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Return Date</label>
+            <input type="date" name="return_date" />
+          </div>
+          <div class="form-group">
+            <label>Return Time</label>
+            <input type="time" name="return_time" />
+          </div>
+          <div class="form-group full-width">
+            <label>Any Message</label>
+            <textarea name="message"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" name="full_name" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" pattern="[0-9]{10}" required />
+          </div>
+          <div class="form-group full-width">
+            <label>Email</label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="form-group full-width buttons">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="clear-btn">Clear Form</button>
+          </div>
+        </form>
+      </div>
+</section>
 
 </main>
 
@@ -79,8 +245,10 @@
     <div class="footer-container">
         <div class="footer-section">
             <h2>Eats & Tours</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugiat impedit non voluptatibus magnam placeat molestiae officia ad sequi aliquid nulla dolorem ratione porro deleniti rerum, beatae quod quam. Consectetur.</p>
-            <p>Email: <a href="mailto:avinashdm@outlook.com"></a></p>
+            <p>Discover the best culinary delights and hidden gems across the globe. Whether you're a foodie or an adventurer, we've got the perfect experience waiting for you. Stay connected, keep exploring, and let every journey be a feast for the senses!
+                Bon appétit and happy travels! 🌍
+                </p>
+            <p>Email:eatntour@gmail.com <a href="mailto:avinashdm@outlook.com"></a></p>
             <p>Phone: +91 - 0123456789</p>
         </div>
         <div class="footer-section">
@@ -113,7 +281,9 @@
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="swiper.js"></script>
 <script src="./flight.js"></script>
 </body>
 </html>

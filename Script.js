@@ -16,13 +16,23 @@ function sinup()
 
     if(spname=="")
     {
-        alert("Enter username")
+        Swal.fire({
+            icon: "error",
+            title: "Oops",
+            text: "Enter Username",
+            footer: '<a href="#">Why do I have this issue?</a>'
+          });
         document.querySelector('#uname').focus()
         return false
     }
     else if(spass=="")
         {
-            alert("Enter password")
+            Swal.fire({
+                icon: "error",
+                title: "Oops",
+                text: "Enter password",
+                footer: '<a href="#">Why do I have this issue?</a>'
+              });
             document.querySelector('#upass').focus()
             return false
         }
@@ -37,6 +47,7 @@ function sinup()
         localStorage.setItem("username",spname)
         localStorage.setItem("password",spass)
         
+
       
 location.href="./login.html"
 return false

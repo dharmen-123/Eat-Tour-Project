@@ -230,17 +230,17 @@ let Details=()=>{
         "persons":persons,
         "specialtreat":specialtreat
     })
-  })
+  });
 
   // Success alert
   Swal.fire({
     title: "Booking Confirm",
     icon: "success",
     draggable: true
-
   }).then((result)=>{
-    location.href="./database.html";
   })
+  location.href="./database.html";
+
   return false;
 };
 
