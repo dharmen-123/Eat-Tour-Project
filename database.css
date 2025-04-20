@@ -1,11 +1,20 @@
  /* Database css sus star from here  */
 
  * {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
   }
+main {
+  background: url(./videos/river.gif) no-repeat center center/cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
   
   #maindiv {
     width: 100%;
@@ -151,3 +160,83 @@
       transform: scale(1);
     }
   }
+
+.datatable{
+  /* align-items: center; */
+  margin: auto;
+  padding: 10px 0px 10px 0px;
+  border-radius: 15px;
+  color: rgb(34, 31, 31);
+  /* background-color: rgba(156, 151, 151, 0.762); */
+  background: transparent;
+  
+   thead tr th{
+    padding: 3px;
+    font-size: 25px;
+    color: rgb(253, 83, 4);
+    border: 2px solid rgb(40, 119, 198);
+    border-radius: 10px;
+    background-color: #d6d1d161;
+   }
+
+   .delid{
+    color: rgb(250, 250, 250);
+    background-color: rgb(249, 29, 9);
+   }
+   .updid{
+    color: rgb(250, 250, 250);
+    background-color: rgb(10, 135, 252);
+   }
+}
+
+#showtable{
+  border: 2px solid black;
+  background-color: rgb(189, 186, 183);
+  text-align: center;
+
+   tr td{
+    padding: 6px;
+    margin: 6px;
+    /* font-size: 15px; */
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold  ;
+    
+   }
+   .Name{
+    background-color: #2b1405;
+    color: rgb(242, 236, 232);
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: bold;
+   }
+   .Email{
+         font-size: 17px;
+         font-weight: bold  ;
+         color: #f50a55df;
+        }
+   .Number{
+    background-color: #0af7f338;
+    color: rgb(39, 14, 3);
+
+   }
+
+   .Price{
+    background-color: #febc05;
+    color: #311504;
+   }
+
+   .Date{
+    color: #03c7fd;
+    background-color: rgba(12, 4, 4, 0.733);
+   }
+   .delbut{
+    font-size: 25px;
+    color: red;
+    background-color: #15b1fae8;
+   }
+   .updbut{
+    font-size: 25px;
+    color: rgb(6, 42, 248);
+    background-color: #911f19f3;
+   }
+}

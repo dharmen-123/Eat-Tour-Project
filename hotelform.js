@@ -12,19 +12,19 @@ let Hoteldata=async()=>{
     data1.map((key)=>{ 
     datashow.innerHTML+=`
           <tr>
-            <td>${key.name}</td>
-            <td>${key.email}</td>
-            <td>${key.mobile}</td>
+            <td class="Name">${key.name}</td>
+            <td class="Email">${key.email}</td>
+            <td class="Number">${key.mobile}</td>
             <td>${key.country}</td>
-            <td>${key.checkin}</td>
-            <td>${key.checkout}</td>
+            <td class="Date">${key.checkin}</td>
+            <td class="Date">${key.checkout}</td>
             <td>${key.roomtype}</td>
-            <td>${key.rooms}</td>
-            <td>${key.persons}</td>
-            <td>${key.specialtreat}</td>
-            <td>${key.persons*500*key.rooms}</td>
-            <td align="center" onclick="confirmdel('${key.id}')"><i class="fa-solid fa-trash"></i></td>
-            <td onclick="Upd('${key.id}')"><i class="fa-solid fa-pen-to-square"></i></td>
+            <td class="Number">${key.rooms}</td>
+            <td class="Number">${key.persons}</td>
+          <!--  <td>${key.specialtreat}</td>-->
+            <td class="Price">${key.persons*500*key.rooms}</td>
+            <td class="delbut"  onclick="confirmdel('${key.id}')"><i class="fa-solid fa-trash"></i></td>
+            <td class="updbut"  onclick="Upd('${key.id}')"><i class="fa-solid fa-pen-to-square"></i></td>
             </tr>
     `
   }) 
@@ -108,7 +108,7 @@ let Del=(id)=>{
         </div>
         <div class="form-row">
           <input type="number" id="uppersons" placeholder="No. of person" value="${data.persons}">
-          <select id="upspecialtreat" value="${data.specialtreat}">
+          <select id="upspecialtreat" >
             <option disabled selected>Special Treatment</option>
             <option>Yes</option>
             <option>No</option>
@@ -239,10 +239,8 @@ let Details=()=>{
     draggable: true
 
   }).then((result)=>{
-    location.href="./hotel.html";
-
+    location.href="./database.html";
   })
-
   return false;
 };
 
