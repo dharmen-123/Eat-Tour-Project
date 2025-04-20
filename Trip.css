@@ -1,4 +1,4 @@
-.headtext{
+/* .headtext{
   font-size: 55px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: orange;
@@ -35,7 +35,7 @@
 
 .typing-container {
   animation: typing 10s steps(100, end) forwards, blink 0.7s ease-in infinite;
-}
+} */
 
 
 /* Swiper start  */
@@ -329,3 +329,5 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
+
+  
