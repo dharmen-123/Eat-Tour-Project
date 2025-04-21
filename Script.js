@@ -13,7 +13,7 @@ function sinup()
 {
     let spname=document.querySelector('#uname').value
     let spass=document.querySelector('#upass').value
-
+    
     if(spname=="")
     {
         Swal.fire({
@@ -47,7 +47,8 @@ function sinup()
         localStorage.setItem("username",spname)
         localStorage.setItem("password",spass)
         
-
+         console.log(spname , spass);
+         
       
 location.href="./login.html"
 return false
@@ -63,6 +64,7 @@ function logine()
  
     let name=localStorage.getItem("username")
     let password=localStorage.getItem("password")
+   
     console.log(name,password);
      
     if(lgname==name && lgpass==password)
