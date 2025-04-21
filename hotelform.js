@@ -8,7 +8,13 @@ let Hoteldata=async()=>{
 
     console.log(data1);
 
+    DataShow(data1)
+
+}
+
+let DataShow=(data1)=>{
  let  datashow = document.querySelector('#showtable');
+  datashow.innerHTML=""
     data1.map((key)=>{ 
     datashow.innerHTML+=`
           <tr>
@@ -238,7 +244,7 @@ let Details=()=>{
     icon: "success",
     draggable: true
   });
-  
+
    location.href="./database.html";
 return false
 
@@ -251,4 +257,28 @@ function validateEmail(email) {
 function validatePhone(phone) {
   let re = /^[6-9]\d{9}$/;
   return re.test(phone);
+}
+
+
+let  Searchdata=async()=>{
+    
+  let dataSearch=document.querySelector('#Search').value.toLowerCase();
+ 
+
+  let url1="http://localhost:3000/Hotels"
+
+  let response= await fetch(url1 ,{method:"GET"})
+
+  let data1=await response.json()
+
+
+ let FilterData= data1.filter((e)=>{
+
+    return e.name.toLowerCase().includes(dataSearch)
+
+  })
+   
+  DataShow(FilterData)
+
+
 }

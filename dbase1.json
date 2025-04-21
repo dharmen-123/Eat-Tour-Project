@@ -64,19 +64,6 @@
       "persons": "6",
       "specialtreat": "Special Treatment",
       "id": "3b1b"
-    },
-    {
-      "id": "b79f",
-      "name": "Raju",
-      "email": "dfbdgf@yahoo.com",
-      "mobile": "9766584593",
-      "country": "Indore",
-      "checkin": "2025-04-22",
-      "checkout": "2025-04-24",
-      "roomtype": "Deluxe",
-      "rooms": "2",
-      "persons": "4",
-      "specialtreat": "No"
     }
   ]
 }

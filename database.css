@@ -247,3 +247,14 @@ main {
     background-color: #911f19f3;
    }
 }
+
+
+#Search{
+  width: 300px;
+
+}
+.Searchinp{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
