@@ -227,8 +227,8 @@ margin-left: 4%;
       width: 370px !important;
     }
   }
-  #secondsec .text1st{
-    width: 25px !important;
+  .login span a b{
+    display: none;
   }
 }
 #secondsec{
@@ -237,15 +237,20 @@ margin-left: 4%;
   text-align: center;
 }
 #secondsec .twodiv{
-  width: 100%;
+  /* width: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
   margin: auto;
   row-gap: 30px;
   padding: 2%;
-   grid-template-columns: repeat(auto-fit, minmax(30em ,1fr));
-
+   grid-template-columns: repeat(auto-fit, minmax(30em ,1fr)); */
+   
+   display: flex;
+   /* flex-direction: column; */
+   flex-wrap: wrap;
+   justify-content: center;
+   row-gap: 20px;
 }
 #secondsec .text1st{
   font-family:Arial, Helvetica, sans-serif;
