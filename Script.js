@@ -80,11 +80,19 @@ function logine()
 
           })
     }
+    else if(lgname=="" || lgpass==""){
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Enter details",
+            footer: '<a href="#">Why do I have this issue?</a>'
+          });
+    }
     else{
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Something went wrong!",
+            text: "User not found",
             footer: '<a href="#">Why do I have this issue?</a>'
           });
     }
