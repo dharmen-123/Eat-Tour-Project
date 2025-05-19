@@ -1,19 +1,6 @@
 {
   "Hotels": [
     {
-      "name": "Harsh Thakre",
-      "email": "harsh@gmail.com",
-      "mobile": "8876979897",
-      "country": "australia",
-      "checkin": "2025-04-18",
-      "checkout": "2025-04-21",
-      "roomtype": "Deluxe",
-      "rooms": "2",
-      "persons": "3",
-      "specialtreat": "Special Treatment",
-      "id": "105d"
-    },
-    {
       "id": "5db8",
       "name": "Atul Kumar",
       "email": "dfbdgf@yahoo.com",
