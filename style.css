@@ -224,7 +224,7 @@ margin-left: 4%;
 @media (max-width:400px){
   #first-section .pdiv1 .cdiv1{
     img{
-      width: 370px !important;
+      width: 340px !important;
     }
   }
   .login span a b{
