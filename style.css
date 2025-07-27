@@ -22,8 +22,8 @@ body{
     /* border-bottom: 2px solid black; */
 
   .logo{
-    width: 150px;
-    height: 70px;
+    width: 130px;
+    height: 55px;
   }
   li{
     list-style: none;
@@ -229,6 +229,12 @@ margin-left: 4%;
   }
   .login span a b{
     display: none;
+  }
+  #navbar{
+    .logo{
+      width: 105px;
+      height: 35px;
+    }
   }
 }
 #secondsec{
