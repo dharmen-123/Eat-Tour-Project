@@ -81,12 +81,13 @@ function logine()
           })
     }
     else if(lgname=="" || lgpass==""){
-        Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "Enter details",
-            footer: '<a href="#">Why do I have this issue?</a>'
-          });
+        // Swal.fire({
+        //     icon: "error",
+        //     title: "Oops...",
+        //     text: "Enter details",
+        //     footer: '<a href="#">Why do I have this issue?</a>'
+        //   });
+        alert("Please enter your credential");
     }
     else{
         Swal.fire({

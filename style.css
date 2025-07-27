@@ -189,10 +189,10 @@ margin-left: 4%;
       color: rgb(43, 4, 4);
     }
    #first-section .pdiv1 .multitext{
-    font-size: 35px;
+    font-size: 30px;
    }
    #first-section .pdiv1 .cdiv1{
-           top: 35%; 
+           top: 39%; 
      
      img{
     width: 400px; 
@@ -224,7 +224,7 @@ margin-left: 4%;
 @media (max-width:400px){
   #first-section .pdiv1 .cdiv1{
     img{
-      width: 340px !important;
+      width: 320px !important;
     }
   }
   .login span a b{
