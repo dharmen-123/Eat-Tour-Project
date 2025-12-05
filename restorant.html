@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat&Tour</title>
+    <link rel="shortcut icon" href="./images/weblogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="restorant.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>  
+</head>
+
+<body>
+
+    <!-- Header Part is start from here  -->
+<header>
+    <nav id="navbar">
+       <a href="index.html"><img class="logo" src="./images/weblogo.png" alt=""></a>
+        <div class="navlink">
+            <ul>
+               <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+               <li><i class="fa-solid fa-umbrella-beach"></i><a href="./Trip.html">Trip</a></li>
+               <li><i class="fa-solid fa-utensils"></i><a href="">Restaurant</a></li>
+               <li><i class="fa-solid fa-clipboard"></i><a href="">About</a></li>
+               <li><i class="fa-solid fa-plane-up"></i><a href="./Flight.html">Flight</a></li>
+               <li><i class="fa-solid fa-hotel"></i><a href="hotel.html">Hotel</a></li>
+            </ul>
+        </div>
+        <div class="login">
+          <b><a href="./database.html"><i class="fa-solid fa-cart-shopping"></i></a></b>
+          <span ><a href="login.html"> <i class="fa-solid fa-circle-user"></i><b> Login</b></a></span>
+        <div class="barbutton">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    </nav>
+    <div class="dropdownmenu">
+        <ul>
+           <li><a href="./index.html">* Home</a></li>
+           <li><a href="Trip.html">* Trip</a></li>
+           <li><a href="restorant.html">* Restaurant</a></li>
+           <li><a href="./Flight.html">* Flight</a></li>
+           <li><a href="./hotel.html">* Hotel</a></li>
+           <li><a href="">* About Us</a></li>
+           <li><a href="">* Services</a></li>
+           <li><a href="./database.html">* Bookings</a></li>
+           <li><a href="login.html">* LOGIN</a></li>
+        </ul>
+     </div>
+</header>
+<script>
+    const button = document.querySelector('.barbutton')
+    const buttonicon = document.querySelector('.barbutton i')
+    const dropmenu = document.querySelector('.dropdownmenu')
+
+    button.onclick = function(){
+        dropmenu.classList.toggle('open')
+        const isOpen =dropmenu.classList.contains('open')
+        buttonicon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+   <!-- Header part is end here  -->
+<main>
+    <br><br>
+            <div class="container-wrapper">
+                <div class="hero-section" data-alt="A warm, inviting photo of a beautifully set restaurant dining table" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKkO2EQd4vZNYR_zwBuIQ3vxbBhij2vZzSa6CzE7Sat-prsbXqHLk0QZGWzTsg87dHiuhtMGm7UYCZsnUmEgY673HP4y6Ke4fEQ_1SQZupBGWIlEPWOIhQhoulQnWC0kyMIhm65yKfgqrXy6TMdkCyKbDi5POuc2Bin0KaZsnpIoOqjbcD5xUqERvblRxg4Pkvi9g2Sa4b7lbldAwBJRXPV0H8OXhXFHJQWXbTrT6soQSvinOpeSb4YoieMuHY1xskKThTUZp8nSSf");'>
+                    <div class="hero-content">
+                        <h2 class="hero-title">Experience Culinary Excellence</h2>
+                        <p class="hero-subtitle">Where every dish tells a story.</p>
+                    </div>
+                    <button class="reserve-button">
+                        <span class="truncate">Reserve a Table</span>
+                    </button>
+                </div>
+            </div>
+
+            <section class="section-padding">
+                <h3 class="section-title">Our Story</h3>
+                <p class="section-text">
+                    Discover the passion behind our plates. Founded with a love for fresh, local ingredients and a dedication to timeless recipes, **Savory Bites** offers a unique dining experience that feels both refined and wonderfully familiar.
+                </p>
+            </section>
+
+            <section class="section-padding section-bg">
+                <h3 class="section-title menu-title">Menu Highlights</h3>
+                <div class="menu-grid">
+                    <div class="menu-item-card">
+                        <img class="menu-item-image" data-alt="A photo of a gourmet pizza with fresh toppings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx8vVFc7yjrEfb0EaHzTfzuK7oAM64RszFq6SmUpzfrW8dKkuI72GrpzloTRp0eSWL6I4Ue9uHXZ0kHWT0i8ou4PHE9UJRw6pXZw8U59gAZIejHnTtwlLtnhKBeUKVSf4CA-jCdM9rftknJV15KeOfp1Iphuqd7oW5d6bJqARe811AxV-Rlf1eT2b0li1p0rKYZmgNgsmcZARyyHxWJ99VC8dTGR75r3vtPPdUk003pUpzn1yz30XvjjGNoUp5fH6CJrszIUCGukT9"/>
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Margherita Pizza</h4>
+                                <p class="menu-item-price">$22</p>
+                            </div>
+                            <p class="menu-item-description">Classic tomato, fresh mozzarella, and aromatic basil.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img class="menu-item-image" data-alt="A beautifully plated seared salmon dish with vegetables." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK5B6OPTfn8tLIKXU_-beW4knDIUf--OnhxGg5El2o1v3b5WLPkGmcMmLm97CwkxWNW2EozQXMd5SAaHnInjUl8GFETdDMJ5JiRtNV5IkE2LTS3DDGafrvqOxamnq13Czl4aXXcfEV3gJF4B8mxpH2sonGTV3dOF6hPWxh7yzgPsfYcpTKy6D9Fj4DARqrClcmwJID179vCvhBx1XPar1xG13HljSlLlUp7Ld4EHl21UI4MxNmRXjUcqniiwxTYmghuoFMkPIMx3xw"/>
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Seared Salmon</h4>
+                                <p class="menu-item-price">$34</p>
+                            </div>
+                            <p class="menu-item-description">Pan-seared salmon served with asparagus and lemon.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img class="menu-item-image" data-alt="A close-up of a classic spaghetti bolognese pasta dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSKEm0AWsiQUa3wZXXIBpBRjNL-ivK8S7e2sFvpgCq6yPE9jLWywgT03a8a1f9mLlDURtHdXbez8egidMbce_vMVsCZl2mDUmaDAuNhokKo3gWivF3LGZbX2kCvZGTHOY1s2v1nhWetbYJnnKzfMYppCB_EmI2S2P5RtCzy2bb1QkXWq97GU-ZhIc1u1yzXgq2_R6JTm3MflaubRQDXv0v3mG5E2awkf864t1oxJGKAXCBrq6uTXoUlu4sa76LdjEJG20lsV9AAaD9"/>
+                        <div class="menu-item-details">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Classic Bolognese</h4>
+                                <p class="menu-item-price">$28</p>
+                            </div>
+                            <p class="menu-item-description">Rich meat sauce over freshly made pasta.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding gallery-section">
+                <h3 class="section-title gallery-title">Gallery</h3>
+                <div class="gallery-grid">
+                    <img class="gallery-image" data-alt="Stylish interior of the restaurant with tables and chairs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzRqpd_jtjeX3NIxh6qG2UZP7aAPqu8izkNMl0Tknlj8KOpjts0BBssDd6y3osmglMrLEKaDTwT4dgIlAKP3p4z5KlPGfmpKzHdFNiqlNFKe4m0bQeAIAPSZbfMj2R5xekVH8b_TvwMCZf0QNfTFNvx9XBQEF6e4hWkS--RDzoi5F7AEeBAxxdDDFgdyT-HBXfx2SZj44a5fXbhWYU8GdOvA7e-Ae21NAng-7Nh5xAXw3AK9ko_KQ3gsTRZI5c6xwmC10xStTlImoI"/>
+                    <img class="gallery-image" data-alt="A wide shot of the restaurant's ambient dining area." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsg5jHfNoDAsc6zztsIeFQPPbUxADiSE0eV-8q0gd6b9aw3SYDFZtWfWB3wiUVlDj1zW3B5gk_HaTmdqAMT638ymzOq19BD7Yd0CBuY26q9cUyM49-Fma0U8ptJezf_ZssHtI-Yqhge-OBKECzKYpDOTkzRvAV4VxcB4IDEivi48P3_WJU9MPHLNa8JrMEWfNgIeFv_qpkWpbQ-1woCZnDnAeZLQVNxoYU3oyoSajnc8jPBMuQis_BoMV_pkLCEJPSC9DbTyRPTwVD"/>
+                    <img class="gallery-image" data-alt="A close-up of a chef plating a dish with precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuEoffdHGfHi0TW1junyHyCUxSFixhEEuSbJaGkGIqP9ZXMVFMaX_QB_zEKn5QTQ2qFD0b7_vvXpcGDhGSZlnAWvfW70EROoTw12VnQw8X5wwqiC6YOu-c4dbte31w8fkx6KhVWEZfmPXW4eqpNCdfkuq8l-cz_w1WjXGYJcweX8ITD3CVmwW2K3xme-vc7BNjl8NnoQbhr26AW9jTebCwmXlFdTZa7TRJ4_v_oHnk9e0FcaSmj09O4wQVIzKdjqdw4S9P0uMNhsCa"/>
+                    <img class="gallery-image" data-alt="An assortment of colorful dishes on a table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ_Gg6IaVsPm3DsbXWKmzYo0OaPtsAi4KKxMKmDu0_IuQS8KQueBvMOIRH258u83or4USGiIeACbjTisDE_y0C3AbkjYKzVsQ_dR9vkBuF1zIkv-Og6WTA_XxqyIRNVFT1ZRxh_LDnspqtXOfIuQiw2HhrQ4FvNWn4WHiOrIEjjnunekFcFWXpDxE-ziZScAb6CfjBziuI7iH-Eqki54T2D16SFPwKP3eTaZyEGcBwaop6Ua8bJxEBjdtDj_mRGLf7nHd7y74xdn8m"/>
+                </div>
+            </section>
+
+            <section class="section-padding section-bg">
+                <h3 class="section-title testimonial-title">What Our Guests Say</h3>
+                <div class="testimonial-space">
+                    <div class="testimonial-card">
+                        <div class="rating-stars">
+                            <span class="material-symbols-outlined icon-primary">star</span>
+                            <span class="material-symbols-outlined icon-primary">star</span>
+                            <span class="material-symbols-outlined icon-primary">star</span>
+                            <span class="material-symbols-outlined icon-primary">star</span>
+                            <span class="material-symbols-outlined icon-primary">star</span>
+                        </div>
+                        <p class="testimonial-text">"An unforgettable dining experience! The food was exquisite and the service was impeccable. Highly recommended."</p>
+                        <p class="testimonial-author">- Sarah L.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating-stars">
+                            <span class="material-symbols-outlined icon-primary">star</span>
+                            <span class="material-symbols-outlined icon-primary">star</span>
+                            <span class="material-symbols-outlined icon-primary">star</span>
+                            <span class="material-symbols-outlined icon-primary">star</span>
+                            <span class="material-symbols-outlined icon-primary">star</span>
+                        </div>
+                        <p class="testimonial-text">"The ambiance is perfect for a special night out. Every dish we tried was a masterpiece. We will be back!"</p>
+                        <p class="testimonial-author">- Michael B.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <h3 class="section-title">Contact & Location</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="material-symbols-outlined icon-primary contact-icon">location_on</span>
+                        <p class="contact-text">As per you location we are available</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="material-symbols-outlined icon-primary contact-icon">call</span>
+                        <p class="contact-text">(123) 456-7890</p>
+                    </div>
+                    <div class="contact-item schedule-item">
+                        <span class="material-symbols-outlined icon-primary contact-icon">schedule</span>
+                        <div class="schedule-text">
+                            <p class="schedule-title">Operating Hours:</p>
+                            <p>Mon - Fri: 5:00 PM - 10:00 PM</p>
+                            <p>Sat - Sun: 4:00 PM - 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58001.02326446506!2d77.5502142891969!3d23.29369354981035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1764907902869!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <button class="reserve-button contact-reserve-button">
+                    <span class="truncate">Reserve Your Table Now</span>
+                </button>
+            </section>
+        </main>
+
+   <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Eats & Tours</h2>
+            <p>Discover the best culinary delights and hidden gems across the globe. Whether you're a foodie or an adventurer, we've got the perfect experience waiting for you. Stay connected, keep exploring, and let every journey be a feast for the senses!
+              Bon appétit and happy travels! 🌍🍽️
+              </p>
+            <p>Email:eatntour@gmail.com <a href="mailto:avinashdm@outlook.com"></a></p>
+            <p>Phone: +91 - 0123456789</p>
+        </div>
+        <div class="footer-section">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Join Us</h2>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Enter your email id">
+                <button type="submit">Subscribe</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Eats & Tour © 2025 - All Rights Reserved</p>
+    </div>
+</footer>
+
+
+    
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="swiper.js"></script>
+  <script src="Script.js"></script>
+</body>
+
+</html>
