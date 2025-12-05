@@ -123,7 +123,7 @@ margin-left: 4%;
 
 #first-section{
      .pdiv1{
-    background-image: url(./images/mountainbech.png) ;
+    background-image: url(./images/beech3.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -142,7 +142,7 @@ margin-left: 4%;
   }
     .cdiv1{
         position: absolute;
-        top: 22%;
+        top: 27%;
         left: 2%;
     }
     .cdiv2{
